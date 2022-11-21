@@ -317,7 +317,7 @@ ul,li{
 }
 
 .btn-style-three:hover{
-	color:#222222;
+	color: #fa1a1a;
 	-webkit-box-shadow: 0 10px 30px rgba(0,0,0,0.10);
 	-moz-box-shadow: 0 10px 30px rgba(0,0,0,0.10);
 	-ms-box-shadow: 0 10px 30px rgba(0,0,0,0.10);
@@ -528,7 +528,7 @@ ul,li{
 	background-color:#ffffff; 
 	background-position:center center; 
 	background-repeat:no-repeat; 
-	background-image:url(../images/icons/preloader.svg);
+	background-image:url(../images/preloader.svg);
 }
 
 img{
@@ -2148,7 +2148,7 @@ img[data-src] {
 .page-title{
 	position:relative;
 	text-align:center;
-	padding:90px 0px;
+	padding:250px 0px 90px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2224,7 +2224,7 @@ img[data-src] {
 	content: "\f105";
 	right:-2px;
 	top:1px;
-	color:#00c0ff;
+	color:#fff;
 	font-size:14px;
 	font-weight: 900;
 	font-family: 'Font Awesome 5 Free';
@@ -4240,7 +4240,7 @@ a.ui-button:active, .ui-button:active,
 	left: 0;
 	top: 0;
 	font-size: 24px;
-	color: #00c0ff;
+	color: #ff0101;
 	line-height: 30px;
 }
 
@@ -6601,7 +6601,7 @@ a.ui-button:active, .ui-button:active,
 }
 
 .agent-block .inner-box:hover:before{
-	border: 2px solid #00c0ff;
+	border: 2px solid #08808e;
 	right: 120px;
 }
 
@@ -8373,6 +8373,14 @@ a.ui-button:active, .ui-button:active,
 	box-shadow: 0 0 21px rgba(0,0,0,0.18);
 	content: "";
 }
+.contact-page-section .outer-box-reply:before{
+	left: 0px;
+}
+
+#replyBox {
+	display: none;
+}
+
 
 .contact-page-section .contact-column{
 	position: relative;
@@ -10116,7 +10124,7 @@ a.ui-button:active, .ui-button:active,
 
 .login-section{
 	position:relative;
-	padding:120px 0px 50px;
+	padding:70px 0px 20px;
 }
 
 .login-section .column{
@@ -10165,7 +10173,7 @@ a.ui-button:active, .ui-button:active,
 	line-height:30px;
 	padding:10px 20px;
 	height:50px;
-	color: #aaaaaa;
+	color: #000;
 	font-size:14px;
 	background-color: #ffffff;
 	-webkit-transition:all 300ms ease;
@@ -10182,7 +10190,7 @@ a.ui-button:active, .ui-button:active,
 .login-form .form-group select:focus,
 .login-form .form-group textarea:focus{
 	border-color:#00c0ff;
-	color: #ffffff;
+	color: #000;
 }
 
 .login-form button{

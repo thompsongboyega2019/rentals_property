@@ -35,6 +35,108 @@
 .feature-block-three .inner-box .icon {
     color: #08808e;
 }
+.page-breadcrumb li {
+    color: #fff;
+}
+.page-breadcrumb li::after {
+    color: #fff;
+}
+#userReg {
+    display: none;
+}
+h1.faq_questions {
+    font-size: 1rem !important;
+}
+
+/** Accordion CSS **/
+div.c{
+    position: relative;
+    margin:2em;
+  }
+  div.c input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity:0;
+    visibility: 0;
+  }
+  h1.faq_questions{
+    background: rgba(8, 128, 142, 0.7);
+    color:white;
+    padding:0.5em 1em;
+    position: relative;
+  }
+  h1.faq_title {
+      background-color: transparent;
+  }
+  label.questions::before{
+    content:"▶";
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1em;
+    margin-top: 0.2em;
+    /**border: 15px solid transparent;
+    border-left:20px solid white;**/
+  }
+  label{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  label.questions {
+    margin: .5rem 0;
+    display: block;
+  }
+  div.p{
+    max-height:0px;
+    overflow: hidden;
+    transition:max-height 0.5s;
+    background-color: white;
+    box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  div.p p {
+    padding: 1.5em 2em 2em;
+  }
+  div.c input:checked ~ h1 label::before{
+    transform: rotate(90deg);
+    
+  }
+  div.c input:checked ~ h1 ~ div.p{
+    max-height: fit-content;
+  }
+   
+  a{
+    color:steelblue;
+  }
+  li.nav-toggler {
+    display: none;
+  }
+  div.cross-icon {
+    display: none;
+  }
+  ul.navigation li.sidebar_nav {
+    padding: 0.5em 0;
+  }
+  li.sidebar_nav:hover{
+    background-color: #40a4b0;
+  }
+  .sidebar_nav_divider {
+    width: 87%; 
+    margin: auto;
+    }
+.dashboard_contact_wrapper {
+    padding: 20px 0;
+}
+.tenants_load_more {
+  text-align: right;
+}
+#displayAlert_Text_From, #displayAlert_Text_To {
+  color: #ff0101;
+  font-size: 12px;
+}
 /**Mobile View - Android**/
 @media only screen and (max-width: 599px){
     .header-style-three .logo-outer .logo img{
@@ -47,6 +149,35 @@
     .header-style-three .header-upper {
         background-color: #fff;
     }
+    .page-wrapper{
+        padding-left: 0px;
+    }
+    .main-header .main-box{
+        margin-left: 0px;
+    }
+    li.nav-toggler {
+        display: block;
+      }
+      div.cross-icon {
+        display: block;
+      }
+    
+
+    .side-content-visible .hidden-bar{
+        left:0px;
+        opacity:1;
+        visibility:visible;
+    }
+    .side-content-visible .page-wrapper{
+        padding-left: 300px;
+    }
+    .side-content-visible .main-header .main-box{
+        margin-left: 300px;
+    }
+    .sidebar_nav_divider {
+        width: 91%; 
+        margin: auto;
+        }
     
 }
 @media only screen and (max-width: 1139px) {
