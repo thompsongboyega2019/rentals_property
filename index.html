@@ -85,7 +85,7 @@
 
                     <!--Info Box-->
                     <div class="upper-column btn-box info-box">
-                        <a href="#" class="theme-btn btn-style-four"><span class="btn-title">Login / Register</span></a>
+                        <a href="login_register.html" class="theme-btn btn-style-four"><span class="btn-title">Login / Register</span></a>
                     </div>
                 </div>
             </div>
@@ -108,12 +108,12 @@
                             <ul class="navigation clearfix">
                                 <li class="current dropdown"><a href="index.html">Home</a>
                                 </li>
-                                <li class="dropdown"><a href="#">About Us</a>
+                                <li class="dropdown"><a href="about.html">About Us</a>
                                 </li>
                                 <li><a href="#">Lease Management</a></li>
                                 <li class="dropdown"><a href="#">Tenant</a>
                                 </li>
-                                <li><a href="#">Blog</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
                                 <li><a href="#">Contact</a></li>
                             </ul>
                         </div>
@@ -128,9 +128,10 @@
                                 <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
                                     <li class="panel-outer">
                                         <div class="form-container">
-                                            <form method="post" action="http://html.ary-themes.com/revel/blog.html">
+                                            <form method="post" action="#">
                                                 <div class="form-group">
                                                     <input type="search" name="field-name" value="" placeholder="Search Here" required>
+                                                     
                                                     <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
                                                 </div>
                                             </form>
@@ -187,11 +188,11 @@
 
     <!-- Banner Section -->
   <!-- Property Search Section Two -->
-  <section class="property-search-section-three" style="background-image: url(images/banner/two.jpg);">
+  <section class="property-search-section-three" style="background-image: url(images/banner/new.jpg);">
     <div class="auto-container">
         <div class="content-box">
             <div class="title-box">
-                <h2>Discover Your Place To Live</h2>
+                <h2>Discover Your Place To Live In Canada</h2>
                 <h4>Get started with a few clicks...</h4>
             </div>
 
@@ -213,14 +214,21 @@
 
                         <!-- Form Group -->
                         <div class="form-group col-lg-8 col-md-6 col-sm-12">
-                            <input type="text" name="text" placeholder="Enter Keyword..." required="">
+                            <input id="cityName" list="cities" type="text" name="text" placeholder="Enter Keyword..." required="">
+                            <datalist id="cities">
+                                <option value="Ontario, Canada">
+                                <option value="Firefox">
+                                <option value="Chrome">
+                                <option value="Opera">
+                                <option value="Safari">
+                             </datalist>
                         </div>
 
 
                         
                         <!-- Form Group -->
                         <div class="form-group col-lg-2 col-md-3 col-sm-12">
-                            <button type="submit" class="theme-btn btn-style-two"><span class="btn-title">Search</span></button>
+                            <button type="submit" class="theme-btn btn-style-two" onclick="browseListings()"><span class="btn-title">Search</span></button>
                         </div>
                     </div>
                 </form>
@@ -469,6 +477,7 @@
 <script src="js/script.js"></script>
 <!-- Color Setting -->
 <script src="js/color-settings.js"></script>
+<script src="js/custom.js"></script>
 </body>
 
 <!-- Mirrored from html.ary-themes.com/revel/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 01 Nov 2022 13:39:45 GMT -->

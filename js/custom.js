@@ -7,7 +7,7 @@ function toRegister() {
     logForm.style.display = "none";
     pageTitle.innerHTML = "Register";
     pageText.innerHTML = "Register";
-}
+};
 
 function toLogin() {
     var regForm = document.getElementById("userReg");
@@ -18,4 +18,9 @@ function toLogin() {
     logForm.style.display = "block";
     pageTitle.innerHTML = "Log In";
     pageText.innerHTML = "Log In";
-}
+};
+
+//Search buttin on homepage
+function browseListings() {
+    window.location.href = "browse_listings.html";
+  };

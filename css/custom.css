@@ -137,6 +137,45 @@ div.c{
   color: #ff0101;
   font-size: 12px;
 }
+div.mySearchRow {
+  height: 100vh;
+}
+div.search-map-canvas {
+	height: 100vh;
+}
+div#searchRentResults {
+  height: 100%; 
+  overflow-y: scroll;
+}
+div.search-sidebarPageContainer {
+  padding: 120px 0px 0px;
+}
+div.filter_btn {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  /**position: fixed;**/
+  background-color: #fff;
+  z-index: 2;
+  text-align: right;
+}
+#filter_form {
+  display: none;
+}
+div.filter_btn > button {
+  width: 100%;
+}
+.property-search-form.style-four .ui-button .ui-icon::before {
+  color: #ff0101;
+}
+a.searcContactUs {
+  color: #fff;
+}
+div.quit_map_btn {
+  display: none;
+}
+/**.searchFilterForm {
+  background-color: red !important;
+}**/
 /**Mobile View - Android**/
 @media only screen and (max-width: 599px){
     .header-style-three .logo-outer .logo img{
@@ -177,6 +216,12 @@ div.c{
     .sidebar_nav_divider {
         width: 91%; 
         margin: auto;
+        }
+    div.mySearchRow {
+          height: auto;
+        }
+        div.quit_map_btn {
+          display: block;
         }
     
 }

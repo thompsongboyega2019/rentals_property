@@ -103,7 +103,7 @@
 .sidebar .search-box .form-group button,
 .theme_color,
 a{
-	color: #00c0ff;
+	color: #ff0101;
 }
 
 
@@ -201,7 +201,7 @@ a.ui-button:active, .ui-button:active,
 .main-header .search-box-outer .dropdown-menu,
 .main-menu .navigation > li > ul > li  > ul > li > a:hover,
 .main-menu .navigation > li > ul > li:hover > a{
-	border-color: #00c0ff;
+	border-color: #ff0101;
 }
 
 
